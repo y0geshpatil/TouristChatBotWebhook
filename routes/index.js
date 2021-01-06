@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
     {
       "text": {
         "text": [
-          req
+          "ggg"
         ]
       }
     }
