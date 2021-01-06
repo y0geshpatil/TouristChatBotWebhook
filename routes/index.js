@@ -5,7 +5,17 @@ var CircularJSON = require('circular-json');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
-  res.send(CircularJSON.stringify(req));
+  res.send(CircularJSON.stringify({
+  "fulfillmentMessages": [
+    {
+      "text": {
+        "text": [
+          req
+        ]
+      }
+    }
+  ]
+}));
 });
 
 module.exports = router;
